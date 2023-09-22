@@ -4,7 +4,7 @@ public class Pizza {
 
     private int extraCheesePrice = 1;
     private double extraToppingsPrice = 1.5;
-    private double thankYouBag = 0.5;
+    private double Bag = 0.5;
     private double basePizzaPrice;
     private boolean isExtraCheeseAdded = false;
     private boolean isExtraToppingsAdded = false;
@@ -32,7 +32,7 @@ public class Pizza {
 
     public void takeOut() {
         isOptedForTakeOut = true;
-        this.price += thankYouBag;
+        this.price += Bag;
     }
 
     public void getBill() {
@@ -46,7 +46,7 @@ public class Pizza {
             bill += "Extra toppings added: $" + extraToppingsPrice + "\n";
         }
         if (isOptedForTakeOut) {
-            bill += "Take away Bag: $" + thankYouBag + "\n";
+            bill += "Take away Bag: $" + Bag + "\n";
         }
         System.out.printf("%s \n Your total bill is: $%.2f \n", bill, this.price);
     }
