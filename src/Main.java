@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Pizza pizza = new Pizza(false);
+        pizza.addExtraCheese();
+        pizza.addExtraToppings();
+        pizza.getBill();
+
+        DeluxePizza deluxePizza = new DeluxePizza(true);
+        pizza.takeOut();
+        pizza.getBill();
     }
 }
